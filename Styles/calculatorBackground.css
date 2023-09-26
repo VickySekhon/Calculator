@@ -1,0 +1,29 @@
+/* The calculator */
+.calculator-background {
+     background-color: rgb(25,25,25);
+     height: 650px;
+     width: 315px;
+     justify-content: center;
+     align-items: center;
+     display: flex;
+     flex-direction: column;
+     border-radius: 12px;
+     position: relative;
+     box-shadow: 0px 30px 30px rgba(0,0,0,0.9);
+}
+
+
+/* The calculator */
+.calculator-background { 
+     height: 650px;
+     width: 315px;
+     justify-content: center;
+     align-items: center;
+     display: flex;
+     flex-direction: column;
+     border-radius: 12px;
+     position: relative;
+     box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.9);
+     color: var(--text-color-light); /* Use the light mode text color variable */
+   }
+   

@@ -1,0 +1,34 @@
+/* The div that the display is in*/
+.display{
+     display: flex;
+     margin-bottom: 22px;
+     margin-top: 0;
+}
+
+/* Placeholder color*/
+::placeholder{
+     color: white;
+}
+
+
+/* The display where the result shows*/
+.output{
+     color: white; 
+     margin-top: 60px;
+     border-radius: 15px;
+     border: none;
+     padding-right: 5px;
+     width:314px;
+     text-align: right;
+     padding-right: 20px;
+     font-family: 'poppins', sans-serif;
+     font-size: xxx-large;
+     height: 142px;
+     box-shadow: 0  10px 2px -2px rgba(0,0,0,0.2);
+     background-color: rgb(25,25,25);
+}
+
+
+.error-text{
+     color: rgb(208, 12, 12);
+}

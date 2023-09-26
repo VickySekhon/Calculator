@@ -1,0 +1,49 @@
+/* Target all elements*/
+*{
+     padding: 0;
+     margin: 0;
+     font-family: 'Poppins', sans-serif;
+     box-sizing: border-box;
+}
+
+
+
+/* Heading Text*/
+.heading {
+     display: flex; /* Use flex container for positioning */
+     justify-content: left; /* Put space between items (left and right) */
+     align-items: center; /* Vertically center items */
+     width: 100%; /* Take full width */
+     padding: 0 20px; /* Add padding for spacing */
+     margin-left: 70px;
+     margin-top: 20px;
+ }
+ 
+ .heading-text {
+     color: white;
+     font-family: 'Courier New', Courier, monospace;
+     font-size: large;
+     font-weight: 700;
+     margin: 0; /* Remove default margin */
+ }
+ 
+
+ /*Icon at the top left*/
+ .top-left-icon{
+     width: 20px;
+     position: absolute; 
+     top: 2;
+     left: 0;
+     margin-left: 20px; 
+ }
+
+ .top-left-icon:hover{
+    cursor: pointer;
+    opacity: 0.8;
+ }
+
+ .light-mode{
+    width: 20px;
+ }
+
+

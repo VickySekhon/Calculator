@@ -1,0 +1,168 @@
+/* Div that contains all buttons*/
+.buttons{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     column-gap: 0;
+     row-gap: 0;
+     text-align: center;
+     padding-left: 5px;
+     padding-right: 5px;
+}
+
+/* Actual targeted buttons*/
+button{
+     box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+     width: 55px;
+     height: 55px;
+     margin: 7px;
+     padding: 25px;
+     border-radius: 5px;
+     border: none;
+     font-size: larger;
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     background-color: rgb(25,25,25);
+     color: white;
+     font-weight: bold;
+     
+}
+
+
+/*Effects on hover*/
+.del-button:hover,.ac-button:hover,.add-minus-button:hover,.division-button:hover,
+.seven-button:hover,.eight-button:hover,.nine-button:hover,.multiply-button:hover,
+.four-button:hover,.five-button:hover,.six-button:hover,.subtract-button:hover,
+.one-button:hover,.two-button:hover,.two-button:hover,.three-button:hover,
+.addition-button:hover,.zero-button:hover,.percentage-button:hover,.decimal-button:hover,
+.equals-button:hover{
+     cursor: pointer;
+     border:solid;
+     opacity: 0.8;
+
+}
+
+/* Special buttons*/
+.del-button, .ac-button, .add-minus-button, .percentage-button{
+     font-weight: lighter;
+}
+
+/* equals button*/
+.equals-button{
+     background-color: purple;
+}
+
+
+/* ac and del (special) button effects*/
+.ac-button, .del-button, .add-minus-button, .division-button, .seven-button,
+ .eight-button, .nine-button, .multiply-button, .six-button, .five-button, 
+ .four-button, .addition-button, .three-button, .two-button ,.one-button,
+  .subtract-button, .zero-button, .percentage-button, .decimal-button, .equals-button {
+     position: relative;
+     border: 0px solid white;
+     color: white;
+     background-color: transparent;
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+   }
+   
+   .ac-button::before, .del-button::before, .add-minus-button::before, .division-button::before, .seven-button::before,
+ .eight-button::before, .nine-button::before, .multiply-button::before, .six-button::before, .five-button::before, 
+ .four-button::before, .addition-button::before, .three-button::before, .two-button::before ,.one-button::before,
+  .subtract-button::before, .zero-button::before, .percentage-button::before, .decimal-button::before{
+
+     position: absolute;
+     border-radius: 15px;;
+     background: rgb(25,25,25);
+     transition: 0.1s ease-in-out;
+     transform: scaleY(1);
+   }
+
+   
+   
+   .ac-button:hover::before, .del-button:hover::before, .add-minus-button:hover::before, .division-button:hover::before, .seven-button:hover::before,
+   .eight-button:hover::before, .nine-button:hover::before, .multiply-button:hover::before, .six-button:hover::before, .five-button:hover::before, 
+   .four-button:hover::before, .addition-button:hover::before, .three-button:hover::before, .two-button:hover::before ,.one-button:hover::before,
+    .subtract-button:hover::before, .zero-button:hover::before, .percentage-button:hover::before, .decimal-button:hover::before, .equals-button:hover::before {
+     transform: scaleY(0);
+   }
+   
+   .ac-button:hover::after, .del-button:hover::after, .add-minus-button:hover::after, .division-button:hover::after, .seven-button:hover::after,
+   .eight-button:hover::after, .nine-button:hover::after, .multiply-button:hover::after, .six-button:hover::after, .five-button:hover::after, 
+   .four-button:hover::after, .addition-button:hover::after, .three-button:hover::after, .two-button:hover::after ,.one-button:hover::after,
+    .subtract-button:hover::after, .zero-button:hover::after, .percentage-button:hover::after, .decimal-button:hover::after, .equals-button:hover::after{
+     transform: scaleX(0);
+   }
+   
+   .ac-button span, .del-button span , .add-minus-button span, .division-button span, .seven-button span,
+ .eight-button span, .nine-button span , .multiply-button span , .six-button span , .five-button span, 
+ .four-button span , .addition-button span , .three-button span, .two-button span,.one-button span,
+  .subtract-button span, .zero-button span , .percentage-button span, .decimal-button span, .equals-button span{
+     position: relative;
+     z-index: 3;
+   }
+   
+   .ac-button::after, .del-button::after, .add-minus-button::after, .division-button::after, .seven-button::after,
+   .eight-button::after, .nine-button::after, .multiply-button::after, .six-button::after, .five-button::after, 
+   .four-button::after, .addition-button::after, .three-button::after, .two-button::after ,.one-button::after,
+    .subtract-button::after, .zero-button::after, .percentage-button::after, .decimal-button::after{
+     content: "";
+     position: absolute;
+     height: 0px;
+     border: 0px solid white;
+     height: calc(100% + 4px);
+     width: calc(100% - 12px);
+     background: rgb(25,25,25);
+     transition: 0.1s ease-in-out;
+     transform: scaleX(1);
+   }
+
+
+   .equals-button::before{
+     position: absolute;
+     border-radius: 15px;;
+     background: purple;
+     transition: 0.1s ease-in-out;
+     transform: scaleY(1);
+   }
+
+
+
+   .equals-button::after{
+     content: "";
+     position: absolute;
+     height: 0px;
+     border: 0px solid white;
+     height: calc(100% + 4px);
+     width: calc(100% - 12px);
+     background: purple;
+     transition: 0.1s ease-in-out;
+     transform: scaleX(1);
+   }
+
+   .equals-button{
+     background-color: purple;
+   }
+
+
+.light-mode-toggle{
+     border-radius: 50px;
+     position: absolute;
+     top: 0;
+     left: 0;
+     transition: opacity 0.15s;
+     transition: width 0.5s, height 0.5s;
+
+}
+
+
+
+.light-mode-toggle:hover{
+     cursor: pointer;
+     opacity: 0.5;  
+     width: 65px;
+     height: 65px;
+}

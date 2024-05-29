@@ -24,8 +24,10 @@ arr.forEach(button => {
                     const result = eval(string); 
                     if(Number.isInteger(result)){
                          input.value = result;
+                         string = result;
                     } else{
                          input.value = result.toFixed(2);
+                         string = result.toFixed(2);
                     }
                } catch (error){
                     input.value = 'ERROR';
@@ -33,8 +35,10 @@ arr.forEach(button => {
                     setTimeout(() => {
                          input.value = '';
                          input.classList.remove('error-text');
-                    }, 1000); 
-                    input.value = '';
+                    }, 500); 
+
+                    // clear the string so that the user can start over
+                    string = '';
                }
                
           // if all clear is clicked

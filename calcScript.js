@@ -33,7 +33,8 @@ arr.forEach(button => {
                     setTimeout(() => {
                          input.value = '';
                          input.classList.remove('error-text');
-                    }, 1000); 
+                    }, 1500); 
+                    input.value = '';
                }
                
           // if all clear is clicked

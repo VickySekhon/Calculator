@@ -41,6 +41,7 @@ arr.forEach(button => {
                     string = '';
 
                     
+
                }
                
           // if all clear is clicked

@@ -33,7 +33,7 @@ arr.forEach(button => {
                     setTimeout(() => {
                          input.value = '';
                          input.classList.remove('error-text');
-                    }, 1500); 
+                    }, 1000); 
                     input.value = '';
                }
                

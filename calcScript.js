@@ -39,6 +39,7 @@ arr.forEach(button => {
 
                     // clear the string so that the user can start over
                     string = '';
+
                     
                }
                

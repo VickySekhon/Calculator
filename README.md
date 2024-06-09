@@ -1,5 +1,6 @@
 # Calculator 
 
+
 ## Description 
 A functional calculator which is created with the ```front-end stack (HTML, CSS, JS)```. The project features AC and C buttons as well as Error checking and handling for invalid input. The project can be expanded upon using a light-mode/dark-button. Additionally, scientific calculation features can be added. 
 
